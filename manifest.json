@@ -1,0 +1,17 @@
+{
+  "name": "Salesforce.com Sandbox Favicon Extension",
+  "version": "1.0",
+  "description": "Adds an \"S\" to the standard Salesforce.com cloud favicon for all sandbox tabs in a Chrome window.",
+  "browser_action": {
+    "default_icon": "salesforce.png"
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+      	"matches": ["https://*.salesforce.com/*"],
+		"js": ["contentscript.js"]
+    }
+  ]
+}
