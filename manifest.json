@@ -1,4 +1,5 @@
 {
+  "manifest_version": 2,
   "name": "Salesforce.com Sandbox Favicon Extension",
   "version": "1.1",
   "description": "Adds an \"S\" to the standard Salesforce.com cloud favicon for all sandbox tabs in a Chrome window.",
