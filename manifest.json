@@ -11,7 +11,7 @@
   ],
   "content_scripts": [
     {
-      	"matches": ["https://*.salesforce.com/*", "https://*.visual.force.com/*"],
+      	"matches": ["https://*.salesforce.com/*", "https://*.force.com/*"],
 		"js": ["contentscript.js"]
     }
   ]
