@@ -2,10 +2,10 @@ init();
 
 function init() {
 	var sd = subDomain(document.location.href);
-	//console.log('subdomain is: ' + sd);
 	if (sd.indexOf('cs') != -1 || sd.indexOf('tapp') != -1 || sd.indexOf('test') != -1) {
 		changeFavicon();
 	}
+	changeTitle(sd);
 }
 
 function subDomain(url) {
@@ -35,6 +35,11 @@ function subDomain(url) {
 	}
  
 	return url;
+}
+
+//sets title like so: (na2) salesforce.com | Home
+function changeTitle(sd) {
+	window.document.title = '('+sd.split('.')[0]+') '+window.document.title;
 }
 
 function changeFavicon() {
